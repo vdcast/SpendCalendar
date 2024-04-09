@@ -1,12 +1,14 @@
 plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.compose)
+    alias(libs.plugins.android.library)
 //    kotlin("multiplatform")
 //    id("org.jetbrains.compose")
 }
 
 kotlin {
     jvm()
+    androidTarget()
 
     sourceSets {
         commonMain {
@@ -23,5 +25,16 @@ kotlin {
                 api(compose.desktop.currentOs)
             }
         }
+    }
+}
+
+android {
+//    namespace = "com.vdcast.spend_calendar"
+    namespace = findProperty("app.namespace").toString()
+    compileSdk = findProperty("android.compileSdk").toString().toInt()
+
+    compileOptions{
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 }

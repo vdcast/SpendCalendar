@@ -5,3 +5,4 @@ local.properties
 # Ignore Gradle build output directory
 build
 /.idea/vcs.xml
+/.idea/kotlinc.xml
