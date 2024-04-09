@@ -11,3 +11,6 @@ gradle.properties
 .idea
 .DS_Store
 *.cache
+/.idea/vcs.xml
+/.idea/kotlinc.xml
+/.idea/
