@@ -4,7 +4,7 @@ import android.content.res.Resources
 import android.os.Build
 import kotlin.math.roundToInt
 
-actual class DeviceInfo {
+actual class DeviceInfo actual constructor(){
 
     private val displayMetrics = Resources.getSystem().displayMetrics
 

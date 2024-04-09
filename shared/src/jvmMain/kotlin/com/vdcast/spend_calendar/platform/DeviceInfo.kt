@@ -1,6 +1,6 @@
 package com.vdcast.spend_calendar.platform
 
-actual class DeviceInfo {
+actual class DeviceInfo actual constructor() {
     actual val osName = System.getProperty("os.name") ?: "Desktop"
     actual val osVersion = System.getProperty("os.version") ?: "unknown version"
     actual val model = "Desktop"

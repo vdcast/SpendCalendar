@@ -4,6 +4,7 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import com.vdcast.spend_calendar.SayHelloFromCommon
+import com.vdcast.spend_calendar.root.RootScreen
 import com.vdcast.spend_calendar.sayHello
 
 fun main() {
@@ -17,7 +18,8 @@ fun main() {
             state = state,
             title = "Spend Calendar"
         ) {
-            SayHelloFromCommon()
+            RootScreen()
+//            SayHelloFromCommon()
         }
 
     }
