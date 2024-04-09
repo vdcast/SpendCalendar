@@ -1,8 +1,9 @@
 plugins {
-//    kotlin("multiplatform") apply false version "1.9.23"
-//    id("org.jetbrains.compose") apply false version "1.6.1"
     alias(libs.plugins.multiplatform) apply false
     alias(libs.plugins.compose) apply false
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.android.library) apply false
+    alias(libs.plugins.kotlin.android) apply false
 }
 
 //allprojects {
