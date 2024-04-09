@@ -1,22 +1,27 @@
 package com.vdcast.spend_calendar.platform
 
-actual class DeviceInfo {
-    actual val osName: String
-        get() = TODO("Not implemented yet")
-    actual val osVersion: String
-        get() = TODO("Not implemented yet")
-    actual val model: String
-        get() = TODO("Not implemented yet")
-    actual val cpu: String
-        get() = TODO("Not implemented yet")
-    actual val screenWidth: Int
-        get() = TODO("Not implemented yet")
-    actual val screenHeight: Int
-        get() = TODO("Not implemented yet")
-    actual val screenDestiny: Int
-        get() = TODO("Not implemented yet")
+import android.content.res.Resources
+import android.os.Build
+import kotlin.math.roundToInt
 
-    actual fun getSummary(): String {
-        TODO("Not implemented yet")
-    }
+actual class DeviceInfo {
+
+    private val displayMetrics = Resources.getSystem().displayMetrics
+
+    actual val osName = "Android"
+    actual val osVersion = "${Build.VERSION.SDK_INT}"
+    actual val model = "${Build.MANUFACTURER} ${Build.MODEL}"
+    actual val cpu = Build.SUPPORTED_ABIS.firstOrNull() ?: "Unknown cpu"
+    actual val screenWidth = displayMetrics.widthPixels
+    actual val screenHeight = displayMetrics.heightPixels
+    actual val screenDestiny = displayMetrics.density.roundToInt()
+
+    actual fun getSummary() =
+        "osName: $osName\n" +
+                "osVersion: $osVersion\n" +
+                "model: $model\n" +
+                "cpu: $cpu\n" +
+                "screenWidth: $screenWidth\n" +
+                "screenHeight: $screenHeight\n" +
+                "screenDestiny: $screenDestiny"
 }
