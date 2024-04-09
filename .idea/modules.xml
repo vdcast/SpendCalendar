@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/android/SpendCalendar.android.main.iml" filepath="$PROJECT_DIR$/.idea/modules/android/SpendCalendar.android.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/SpendCalendar.desktop.desktopMain.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/SpendCalendar.desktop.desktopMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/SpendCalendar.shared.jvmMain.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/SpendCalendar.shared.jvmMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shared/SpendCalendar.shared.main.iml" filepath="$PROJECT_DIR$/.idea/modules/shared/SpendCalendar.shared.main.iml" />
     </modules>
   </component>
 </project>
