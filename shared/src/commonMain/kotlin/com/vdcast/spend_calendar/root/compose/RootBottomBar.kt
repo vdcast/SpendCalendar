@@ -20,6 +20,8 @@ import androidx.compose.ui.unit.dp
 import com.vdcast.spend_calendar.common.ui.AppThemeProvider
 import com.vdcast.spend_calendar.root.model.AppTab
 import com.vdcast.spend_calendar.root.model.BottomBarItem
+import dev.icerock.moko.resources.compose.painterResource
+import dev.icerock.moko.resources.compose.stringResource
 
 @Composable
 fun BoxScope.RootBottomBar(

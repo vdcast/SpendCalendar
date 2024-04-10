@@ -32,6 +32,7 @@ kotlin {
         }
 
         jvmMain {
+            dependsOn(getByName("commonMain"))
             dependencies {
                 api(compose.desktop.currentOs)
             }
