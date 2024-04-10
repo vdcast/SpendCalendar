@@ -19,9 +19,11 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.vdcast.spend_calendar.MR
 import com.vdcast.spend_calendar.common.ui.AppThemeProvider
 import com.vdcast.spend_calendar.platform.DeviceInfo
 import com.vdcast.spend_calendar.settings.SettingsViewModel
+import dev.icerock.moko.resources.compose.stringResource
 
 
 @Composable

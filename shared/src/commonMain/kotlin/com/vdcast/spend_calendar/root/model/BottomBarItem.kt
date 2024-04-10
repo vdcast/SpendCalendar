@@ -1,5 +1,6 @@
 package com.vdcast.spend_calendar.root.model
 
+import com.vdcast.spend_calendar.MR
 import dev.icerock.moko.resources.ImageResource
 import dev.icerock.moko.resources.StringResource
 

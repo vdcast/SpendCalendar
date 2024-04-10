@@ -31,6 +31,10 @@ kotlin {
             }
         }
 
+        androidMain {
+            dependsOn(getByName("commonMain"))
+        }
+
         jvmMain {
             dependsOn(getByName("commonMain"))
             dependencies {
