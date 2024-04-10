@@ -28,6 +28,8 @@ kotlin {
                 implementation(compose.material)
                 api(libs.resources.core)
                 api(libs.resources.compose)
+
+                implementation(libs.settings)
             }
         }
 
