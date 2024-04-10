@@ -20,7 +20,7 @@ kotlin {
     }
 
     sourceSets {
-        commonMain {
+        val commonMain by getting {
             dependencies {
                 implementation(compose.foundation)
                 implementation(compose.runtime)
@@ -32,11 +32,11 @@ kotlin {
         }
 
         androidMain {
-            dependsOn(getByName("commonMain"))
+            dependsOn(commonMain)
         }
 
         jvmMain {
-            dependsOn(getByName("commonMain"))
+            dependsOn(commonMain)
             dependencies {
                 api(compose.desktop.currentOs)
             }
@@ -46,7 +46,7 @@ kotlin {
         val iosX64Main by getting
         val iosSimulatorArm64Main by getting
         iosMain {
-            dependsOn(getByName("commonMain"))
+            dependsOn(commonMain)
             iosArm64Main.dependsOn(this)
             iosX64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
