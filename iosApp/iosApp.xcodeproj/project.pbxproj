@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AFAD8AC2BC59850001A61A3 /* iosAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAD8AB2BC59850001A61A3 /* iosAppApp.swift */; };
+		7AFAD8AC2BC59850001A61A3 /* iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAD8AB2BC59850001A61A3 /* iosApp.swift */; };
 		7AFAD8AE2BC59850001A61A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFAD8AD2BC59850001A61A3 /* ContentView.swift */; };
 		7AFAD8B02BC59852001A61A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AFAD8AF2BC59852001A61A3 /* Assets.xcassets */; };
 		7AFAD8B32BC59852001A61A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AFAD8B22BC59852001A61A3 /* Preview Assets.xcassets */; };
@@ -32,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		7AFAD8A82BC59850001A61A3 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AFAD8AB2BC59850001A61A3 /* iosAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppApp.swift; sourceTree = "<group>"; };
+		7AFAD8AB2BC59850001A61A3 /* iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosApp.swift; sourceTree = "<group>"; };
 		7AFAD8AD2BC59850001A61A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7AFAD8AF2BC59852001A61A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AFAD8B22BC59852001A61A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		7AFAD8AA2BC59850001A61A3 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
-				7AFAD8AB2BC59850001A61A3 /* iosAppApp.swift */,
+				7AFAD8AB2BC59850001A61A3 /* iosApp.swift */,
 				7AFAD8AD2BC59850001A61A3 /* ContentView.swift */,
 				7AFAD8AF2BC59852001A61A3 /* Assets.xcassets */,
 				7AFAD8B12BC59852001A61A3 /* Preview Content */,
@@ -254,7 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AFAD8AE2BC59850001A61A3 /* ContentView.swift in Sources */,
-				7AFAD8AC2BC59850001A61A3 /* iosAppApp.swift in Sources */,
+				7AFAD8AC2BC59850001A61A3 /* iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +429,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vdcast.iosApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vdcast.spendcalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -459,7 +459,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.vdcast.iosApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vdcast.spendcalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
