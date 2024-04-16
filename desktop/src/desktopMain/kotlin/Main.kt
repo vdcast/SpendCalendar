@@ -20,7 +20,7 @@ fun main() {
         Window(
             onCloseRequest = { exitApplication() },
             state = state,
-            title = "SpendSense"
+            title = "Spend Calendar"
         ) {
             RootScreen()
         }
