@@ -6,5 +6,6 @@ import com.vdcast.spendcalendar.root.compose.RootScreen
 
 fun MainViewController() = ComposeUIViewController {
 //    SayHelloFromCommon()
-    RootScreen(RootViewModel())
+//    RootScreen(RootViewModel())
+    RootScreen()
 }

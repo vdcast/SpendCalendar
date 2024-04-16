@@ -17,7 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.unit.dp
-import com.vdcast.spendcalendar.common.ui.AppThemeProvider
+import com.vdcast.spendcalendar.common.ui.theme.AppThemeProvider
 import com.vdcast.spendcalendar.root.model.AppTab
 import com.vdcast.spendcalendar.root.model.BottomBarItem
 import dev.icerock.moko.resources.compose.painterResource

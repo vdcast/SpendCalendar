@@ -12,7 +12,8 @@ class RootActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            RootScreen(RootViewModel())
+//            RootScreen(RootViewModel())
+            RootScreen()
 //            SayHelloFromCommon()
 
         }

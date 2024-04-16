@@ -8,14 +8,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import com.vdcast.spendcalendar.categories.CategoriesScreen
-import com.vdcast.spendcalendar.common.ui.AppTheme
-import com.vdcast.spendcalendar.common.ui.AppThemeProvider
+import com.vdcast.spendcalendar.categories.list.compose.CategoriesScreen
+import com.vdcast.spendcalendar.common.ui.theme.AppTheme
+import com.vdcast.spendcalendar.common.ui.theme.AppThemeProvider
 import com.vdcast.spendcalendar.di.getKoinInstance
-import com.vdcast.spendcalendar.events.EventsScreen
+import com.vdcast.spendcalendar.events.list.compose.EventsScreen
 import com.vdcast.spendcalendar.root.RootViewModel
 import com.vdcast.spendcalendar.root.model.AppTab
-import com.vdcast.spendcalendar.settings.SettingsViewModel
 import com.vdcast.spendcalendar.settings.compose.SettingsScreen
 
 @Composable

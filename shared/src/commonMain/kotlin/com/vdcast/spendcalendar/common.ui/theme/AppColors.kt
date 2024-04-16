@@ -1,4 +1,4 @@
-package com.vdcast.spendcalendar.common.ui
+package com.vdcast.spendcalendar.common.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,7 +1,7 @@
 package com.vdcast.spendcalendar.root.model
 
 import com.vdcast.spendcalendar.base.BaseViewState
-import com.vdcast.spendcalendar.common.ui.AppPrefs
+import com.vdcast.spendcalendar.common.ui.theme.AppPrefs
 
 class RootContract {
 

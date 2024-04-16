@@ -1,11 +1,27 @@
 package com.vdcast.spendcalendar.settings
 
 import com.vdcast.spendcalendar.base.BaseViewModel
+import com.vdcast.spendcalendar.categories.CategoriesRepository
+import com.vdcast.spendcalendar.categories.model.CategoryApi
+import com.vdcast.spendcalendar.categories.model.toApi
+import com.vdcast.spendcalendar.categories.model.toEntity
+import com.vdcast.spendcalendar.events.EventsRepository
+import com.vdcast.spendcalendar.events.model.SpendEventApi
+import com.vdcast.spendcalendar.events.model.toApi
+import com.vdcast.spendcalendar.events.model.toEntity
+import com.vdcast.spendcalendar.extensions.appLog
+import com.vdcast.spendcalendar.network.AppApi
 import com.vdcast.spendcalendar.platform.DeviceInfo
-import com.vdcast.spendcalendar.settings.SettingsContract.*
+import com.vdcast.spendcalendar.settings.SettingsContract.Event
+import com.vdcast.spendcalendar.settings.SettingsContract.State
 import com.vdcast.spendcalendar.storage.SettingsManager
+import io.ktor.client.call.body
+import io.ktor.http.isSuccess
+import kotlinx.coroutines.CoroutineExceptionHandler
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.launch
 
 //class SettingsViewModel : BaseViewModel<State, Nothing>() {
 //

@@ -23,6 +23,12 @@ fun initKoin(
         StorageModule.settings,
         platformModule,
         appModule,
-        ViewModelsModule.viewModels
+        ViewModelsModule.viewModels,
+        RepositoriesModule.repositories,
+        StorageModule.db,
+        StorageModule.dao,
+        NetworkModule.json,
+        NetworkModule.httpClient,
+        NetworkModule.api,
     )
 }

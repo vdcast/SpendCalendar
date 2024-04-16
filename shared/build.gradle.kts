@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.compose)
     alias(libs.plugins.android.library)
     alias(libs.plugins.moko.res)
+    alias(libs.plugins.sqldelight)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 kotlin {
@@ -27,6 +29,8 @@ kotlin {
                 implementation(compose.runtime)
                 implementation(compose.ui)
                 implementation(compose.material)
+                implementation(compose.material3)
+                implementation(compose.materialIconsExtended)
 
                 //Resources
                 api(libs.resources.core)
@@ -38,6 +42,20 @@ kotlin {
                 //Di
                 api(libs.koin.core)
 
+                //Datetime
+                implementation(libs.datetime)
+
+                //Sqldelight
+                implementation(libs.sqldelight.coroutines.extensions)
+
+                //Network
+                implementation(libs.ktor.client.core)
+                implementation(libs.ktor.client.cio)
+                implementation(libs.ktor.client.logging)
+                implementation(libs.ktor.client.negotiation)
+                implementation(libs.ktor.serialization.kotlinx.json)
+                implementation(libs.kotlinx.serialization.core)
+
                 //Logs
                 api(libs.napier)
             }
@@ -45,12 +63,17 @@ kotlin {
 
         androidMain {
             dependsOn(commonMain)
+            dependencies {
+                implementation(libs.sqldelight.android.driver)
+                implementation(libs.ktor.client.android)
+            }
         }
 
         jvmMain {
             dependsOn(commonMain)
             dependencies {
                 api(compose.desktop.currentOs)
+                implementation(libs.sqldelight.desktop.driver)
             }
         }
 
@@ -62,6 +85,10 @@ kotlin {
             iosArm64Main.dependsOn(this)
             iosX64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
+            dependencies {
+                implementation(libs.sqldelight.native.driver)
+                implementation(libs.ktor.client.ios)
+            }
         }
     }
 }
@@ -81,3 +108,18 @@ android {
     }
 }
 
+sqldelight{
+    databases {
+        create("AppDb"){
+            packageName.set("com.vdcast.spendcalendar.db")
+            schemaOutputDirectory.set(file("src/commonMain/sqldelight/db"))
+        }
+    }
+}
+
+//project.extensions.findByType(KotlinMultiplatformExtension::class.java)?.apply {
+//    targets
+//        .filterIsInstance<KotlinNativeTarget>()
+//        .flatMap { it.binaries }
+//        .forEach { compilationUnit -> compilationUnit.linkerOpts("-lsqlite3") }
+//}
