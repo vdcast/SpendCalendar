@@ -7,14 +7,14 @@ import com.vdcast.spendcalendar.storage.SettingsManager
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 
-class RootViewModel : BaseViewModel<RootContract.RootState, Nothing>() {
+class RootViewModel(
+    private val settingsManager: SettingsManager
+) : BaseViewModel<RootContract.RootState, Nothing>() {
 
     init {
-        SettingsManager.themeIsDarkFlow.onEach {
+        settingsManager.themeIsDarkFlow.onEach {
             updateState { copy(themeIsDark = it) }
         }.launchIn(viewModelScope)
-
-
     }
     override fun initialState() = RootContract.RootState.NONE
 

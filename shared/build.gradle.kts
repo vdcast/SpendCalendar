@@ -37,6 +37,9 @@ kotlin {
 
                 //Di
                 api(libs.koin.core)
+
+                //Logs
+                api(libs.napier)
             }
         }
 
