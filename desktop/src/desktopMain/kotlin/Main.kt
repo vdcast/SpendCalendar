@@ -3,9 +3,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
-import com.vdcast.spend_calendar.root.RootViewModel
-import com.vdcast.spend_calendar.root.compose.RootScreen
-import com.vdcast.spend_calendar.sayHello
+import com.vdcast.spendcalendar.root.RootViewModel
+import com.vdcast.spendcalendar.root.compose.RootScreen
+import com.vdcast.spendcalendar.sayHello
 
 fun main() {
     sayHello()

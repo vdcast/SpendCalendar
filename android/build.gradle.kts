@@ -11,7 +11,7 @@ android {
     defaultConfig {
         minSdk = findProperty("android.minSdk").toString().toInt()
         targetSdk = findProperty("android.targetSdk").toString().toInt()
-        applicationId = "com.vdcast.spend_calendar"
+        applicationId = "com.vdcast.spendcalendar"
         versionCode = 1
         versionName = "0.1"
     }
