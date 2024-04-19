@@ -33,7 +33,7 @@ class SettingsManager(private val settings: Settings) {
     private val EMAIL_KEY = "EMAIL_KEY"
 
     //your local machine
-    val serverUrl = "http://192.168.1.194:1337"
+    val serverUrl = "http://192.168.0.117:1337"
 
 
     private val _themeIsDarkFlow = MutableStateFlow(themeIsDark)
